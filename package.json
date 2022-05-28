@@ -1,0 +1,16 @@
+{
+  "name": "deploy",
+  "version": "0.0.1",
+  "description": "Svelte deployment",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "pm2 start --no-daemon -i max build/index.js",
+    "stop": "pm2 stop"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "pm2": "^5.2.0"
+  }
+}
